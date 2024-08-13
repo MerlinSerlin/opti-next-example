@@ -1,7 +1,26 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import optimizelySdk from '@optimizely/optimizely-sdk';
 
 export default function Home() {
+  // // Fetch user Id from the cookie if available so a returning user from same browser session always sees the same variation.
+  // const userId = 'user123'
+  
+  // // Initialize the SDK
+  // const instance = optimizelySdk.createInstance({
+  //     sdkKey: "HF97GAxhrTBHBppcFYwzn"
+  // })
+
+  // instance?.onReady().then(({ success, reason }) => {
+  //     if (success) {
+  //         const user = instance?.createUserContext(userId);
+  //         console.log(user)
+  //     }
+  //     else {
+  //         console.log('Error:', reason);
+  //     }
+  // });
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
